@@ -1,0 +1,31 @@
+{
+  "canisters": {
+    "ic_siwe_provider": {
+      "candid": "ic_siwe_provider.did",
+      "type": "custom",
+      "wasm": "ic_siwe_provider.wasm.gz"
+    },
+    "bondtoken": {
+      "candid": "icrc1_ledger.did",
+      "type": "custom",
+      "wasm": "icrc1-ledger.wasm.gz"
+    },
+    "goldtoken": {
+      "candid": "icrc1_ledger.did",
+      "type": "custom",
+      "wasm": "icrc1-ledger.wasm.gz"
+    },
+    "backend": {
+      "candid": "src/backend/backend.did",
+      "package": "backend",
+      "type": "rust"
+    },
+    "frontend": {
+      "build": ["pnpm run build"],
+      "source": ["dist"],
+      "type": "assets"
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
